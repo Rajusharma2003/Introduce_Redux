@@ -25,11 +25,16 @@ function upperCase(str) {
 /** kay hoga jab one by one code ko excute karna hoga  */
 const str = "this is one by one code excution"
 
-const outpur = upperCase(repeatString(removeSpaces(str)))
-console.log(outpur);
+// const outpur = upperCase(repeatString(removeSpaces(str)))
+// console.log(outpur);
 
 
 /**  Now we introduce the Redux(compose) */
 
 const reduxComposeResult = compose(removeSpaces , repeatString , upperCase)
 console.log(reduxComposeResult(str));
+
+
+// +++++++++++++++++++++  complete here the compose hook in redux +++++++++++++++++++++++
+
+
